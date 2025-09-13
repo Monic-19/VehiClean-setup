@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root{
+    --bg: #1a1a1a;
+    --fg: #edf1e8;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .revealer{
 position: fixed;
@@ -8,7 +18,7 @@ left: 0;
 width: 100vw;
 height: 100svh;
 transform-origin: center top;
-background-color: #1A1A1A;
+background-color: var(--bg);
 pointer-events: none;
 z-index: 2;
 }
