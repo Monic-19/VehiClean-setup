@@ -20,7 +20,7 @@ height: 100svh;
 transform-origin: center top;
 background-color: var(--bg);
 pointer-events: none;
-z-index: 2;
+z-index: 20;
 }
 
 body::-webkit-scrollbar{

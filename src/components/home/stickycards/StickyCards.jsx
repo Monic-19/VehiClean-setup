@@ -6,6 +6,8 @@ import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { CiClock1 } from "react-icons/ci";
+import { FaRupeeSign } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,33 +16,51 @@ const Stickycards = () => {
     const stickycardsdata = [
         {
           index: 0,
-          title: "Mountain Adventure",
+          title: "Premium Wash",
           image: "/sticky-cards/card1.avif",
-          description: "Explore the serene beauty of the mountains with guided hiking and camping experiences."
+          duration: "Around 1 hour",
+          price: "319",
+          description: "Keep your ride shining bright and rolling right with regular car cleaning!"
         },
         {
           index: 1,
-          title: "City Lights",
+          title: "Deep Cleaning",
           image: "/sticky-cards/card2.avif",
-          description: "Dive into the vibrant nightlife and culture of the world's most iconic cities."
+          duration: "Around 2-3 hours",
+          price: "799",
+          description: "Revitalize your ride with a deep clean that makes it shine like new!"
         },
         {
           index: 2,
-          title: "Ocean Escape",
+          title: "Rubbing & Polishing",
           image: "/sticky-cards/card3.avif",
-          description: "Relax on crystal-clear beaches and enjoy water sports on your tropical getaway."
+          duration: "Around 2-3 hours",
+          price: "1279",
+          description: "Detailing that brings out the best in every detail of your vehicle."
         },
         {
           index: 3,
-          title: "Desert Safari",
+          title: "AC Vents Cleaning",
           image: "/sticky-cards/card4.avif",
-          description: "Take a thrilling ride through the dunes and discover the secrets of the desert."
+          duration: "Around 1 hour",
+          price: "350",
+          description: "Clean your AC vents with our expert cleaning service."
         },
         {
           index: 4,
-          title: "Forest Retreat",
+          title: "Windshield Cleaning",
           image: "/sticky-cards/card5.avif",
-          description: "Unplug and unwind in a cozy cabin nestled in a peaceful, green forest."
+          duration: "Around 1 hour",
+          price: "719",
+          description: "Keep your windshield spotless for a clear view."
+        },
+        {
+          index: 5,
+          title: "Premium Wash (Monthly)",
+          image: "/sticky-cards/card6.avif",
+          duration: "Valid for one month",
+          price: "1276",
+          description: "Convenient monthly packages for regular car cleaning and maintenance."
         }
       ];
     
@@ -103,7 +123,16 @@ const Stickycards = () => {
                         <div className="sticky-card-copy">
 
                             <div className="sticky-card-copy-title">
-                                <p>(About the state)</p>
+                              
+                                <p className='flex items-center gap-2'>
+                                  <CiClock1 className='text-xl'/>
+                                  {cardData.duration}
+                                </p>
+
+                                <p className='flex items-center gap-2 mt-2 font-extrabold '>
+                                  <FaRupeeSign className='text-sm'/> 
+                                  {cardData.price}
+                                </p>
                             </div>
 
                             <div className="sticky-card-copy-description">
