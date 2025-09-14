@@ -161,7 +161,7 @@
   .desktop-nav {
     display: none;
   }
-  
+
   .hamburger-btn {
     display: flex;
   }
@@ -171,11 +171,11 @@
   .nav {
     padding: 0.75rem 1.5rem;
   }
-  
+
   .nav-logo {
     font-size: 1.25rem;
   }
-  
+
   .mobile-menu-container {
     width: 280px;
   }
@@ -185,15 +185,15 @@
   .nav {
     padding: 0.75rem 1rem;
   }
-  
+
   .nav-logo {
     font-size: 1.1rem;
   }
-  
+
   .mobile-menu-container {
     width: 260px;
   }
-  
+
   .mobile-menu-link {
     font-size: 1rem;
     padding: 0.875rem 1.25rem;

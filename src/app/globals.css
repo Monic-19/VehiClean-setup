@@ -1,53 +1,54 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root{
-    --bg: #1a1a1a;
-    --fg: #edf1e8;
+:root {
+  --bg: #1a1a1a;
+  --fg: #edf1e8;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.revealer{
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100svh;
-transform-origin: center top;
-background-color: var(--bg);
-pointer-events: none;
-z-index: 20;
+.revealer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh;
+  transform-origin: center top;
+  background-color: var(--bg);
+  pointer-events: none;
+  z-index: 20;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-    scroll-behavior: smooth;
+body::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
 
-::view-transition-old(root), ::view-transition-new(root){
-    animation: none !important;
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
 }
 
-::view-transition-group(root){
-    z-index: auto !important;
+::view-transition-group(root) {
+  z-index: auto !important;
 }
 
-::view-transition-image-pair(root){
-    isolation: isolate;
-    will-change: clip-path;
-    z-index: 1;
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  will-change: clip-path;
+  z-index: 1;
 }
 
-::view-transition-new(root){
-    z-index: 1000;
-    animation: none !important;
+::view-transition-new(root) {
+  z-index: 1000;
+  animation: none !important;
 }
 
-::view-transition-old(root){
-    z-index: 1;
-    animation: none !important;
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
 }
