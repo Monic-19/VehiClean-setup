@@ -90,6 +90,7 @@ section{
 
     .hero .headline{
         gap: 1vh;
+        margin-top: 4vh;
     }
 
     .hero .headline h1{
@@ -132,6 +133,7 @@ section{
     }
 
     .hero .headline{
+        margin-top: 5vh;
         margin-bottom: 5vh;
     }
 }
