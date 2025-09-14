@@ -65,8 +65,19 @@ section{
     z-index: 2;
 }
 
+.hero .headline{
+    letter-spacing: -0.1rem;
+}
 
-/* Responsive Design */
+.hero .headline h1{
+    font-size: 5.25rem;
+}
+
+.hero{
+     background-color: var(--fg);
+}
+
+
 @media (max-width: 1024px) {
     .intro h1 {
         font-size: clamp(2.5rem, 10vw, 4rem);
