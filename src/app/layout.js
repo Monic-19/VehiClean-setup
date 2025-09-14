@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Navigator from '../components/navigation/navigator';
+import Footer from '../components/footer/Footer';
 import { ViewTransitions } from 'next-view-transitions';
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         >
           <Navigator />
           {children}
+          <Footer />
         </body>
       </html>
     </ViewTransitions>

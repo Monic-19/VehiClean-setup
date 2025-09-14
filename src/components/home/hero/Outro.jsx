@@ -27,7 +27,7 @@ const Outro = () => {
           </p>
         </div>
 
-        <div className="md:h-full h-1/2  w-full lg:w-1/2 p-3 sm:p-4 md:p-3 flex flex-col items-start lg:items-end ">
+        <div className="md:h-full h-1/2  w-full lg:w-1/2 p-3 sm:p-4 md:p-3 flex flex-col items-start lg:items-end md:mt-0 mt-[3vh]">
           <div className="h-[80%] sm:h-56 md:h-64 lg:h-[90%] w-full lg:w-[90%] mt-4 sm:mt-6 md:mt-6 lg:mt-6 mb-3 sm:mb-4 order-2 lg:order-1">
             <img
               src="/carwash2.avif"

@@ -1,0 +1,158 @@
+/* Footer Styles */
+.footer {
+  background-color: var(--fg);
+  color: var(--bg);
+  padding: 3rem 0 0 0;
+  margin-top: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main Footer Content */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand Section */
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--bg);
+}
+
+.footer-description {
+  line-height: 1.6;
+  color: rgba(26, 26, 26, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Section Titles */
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--bg);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: rgba(26, 26, 26, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--bg);
+}
+
+/* Contact Info */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-contact p {
+  color: rgba(26, 26, 26, 0.8);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(26, 26, 26, 0.1);
+  padding: 1.5rem 0;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(26, 26, 26, 0.6);
+  font-size: 0.85rem;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 0 0;
+    margin-top: 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-size: 1.3rem;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 0.5rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    font-size: 1.2rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-description,
+  .footer-links a,
+  .footer-contact p {
+    font-size: 0.85rem;
+  }
+}

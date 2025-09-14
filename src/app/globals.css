@@ -5,6 +5,12 @@
   --fg: #edf1e8;
 }
 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   height: 100%;
   width: 100%;
