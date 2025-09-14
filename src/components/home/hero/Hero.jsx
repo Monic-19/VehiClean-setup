@@ -15,9 +15,9 @@ const Hero = () => {
 
       <Stickycards />
       
-      <div className='headline uppercase p-5 flex flex-col justify-center mb-[15vh]'>
+      <div className='headline uppercase p-5 flex flex-col justify-center md:mb-[2vh] lg:mb-[15vh] '>
         <h1>Drive Clean, Spend Less </h1>
-        <h1 className='lg:ml-32'>Explore Our Service Bundles</h1>
+        <h1 className=' lg:ml-32'>Explore Our Service Bundles</h1>
       </div>
 
 

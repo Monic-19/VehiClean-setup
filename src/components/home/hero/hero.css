@@ -87,6 +87,15 @@ section{
     .intro p {
         font-size: clamp(2rem, 6vw, 3rem);
     }
+
+    .hero .headline{
+        gap: 1vh;
+    }
+
+    .hero .headline h1{
+        font-size: 3rem; 
+        letter-spacing: -0.15rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -110,6 +119,20 @@ section{
     
     .intro p {
         font-size: clamp(1.5rem, 10vw, 2rem);
+    }
+
+    .hero .headline{
+        gap: 2vh;
+    }
+
+    .hero .headline h1{
+        font-size: 2.5rem;
+        letter-spacing: -0.05rem;
+        text-align: center;
+    }
+
+    .hero .headline{
+        margin-bottom: 5vh;
     }
 }
 
